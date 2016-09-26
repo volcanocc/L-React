@@ -3,9 +3,11 @@
  */
 var React = require('react');
 var ReactDOM = require('react-dom');
-var Hello = require('./components/helloWorld.js');
+var HelloWorld = require('./components/helloWorld.js');
+
 
 ReactDOM.render(
-    <Hello name="World" />,
+    <HelloWorld name="Volcano"/>,
     document.getElementById('app')
 );
+
