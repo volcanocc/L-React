@@ -1,10 +1,6 @@
 #Volcano
 ===================
-
-![Icon](https://raw.githubusercontent.com/volcanocc/VolcanoUI/master/images/icon.png)
-
-
-* **Generator:** React + gulp + webpack + sass
+React + gulp + webpack + sass
 
 Now, when everything is ready, run the watch task and begin to develop your React components.
 
