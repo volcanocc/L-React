@@ -3,11 +3,14 @@
  */
 var React = require('react');
 var ReactDOM = require('react-dom');
-var HelloWorld = require('./components/helloWorld.js');
+
+var TodoList = require('./components/TodoList.js');
 
 
 ReactDOM.render(
-    <HelloWorld name="Volcano"/>,
+    <TodoList />,
     document.getElementById('app')
 );
+
+
 
