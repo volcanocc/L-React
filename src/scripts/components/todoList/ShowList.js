@@ -1,26 +1,27 @@
 /**
- * Created by Administrator on 2016/9/27.
+ * Created by Administrator on 2016/9/28.
  */
 
 var React = require('react');
 
-var ListTodo = React.createClass({
+var ShowList = React.createClass({
+
     handleDel: function (e) {
-        var delindex = e.target.getAttribute("data-key");
-        this.props.todo.splice(delindex, 1);
+        var delIndex = e.target.getAttribute('data-key');
+        this.props.todo.splice(delIndex, 1);
         this.props.onDel(this.props.todo);
     },
 
     render: function () {
         return (
-            <ul id="todo-list">
+            <ul className="list-box">
                 {
                     this.props.todo.map(function (item, i) {
                         return (
                             <li key={i}>
                                 <span className="toggle">
-                                    <label>{item}</label>
-                                    <button className="destroy" onClick={this.handleDel} data-key={i}>del</button>
+                                    <label>{i}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{item}</label>
+                                    <button className="v-button secondary mini" onClick={this.handleDel} data-key={i}>删除</button>
                                 </span>
                             </li>
                         )
@@ -31,4 +32,4 @@ var ListTodo = React.createClass({
     }
 });
 
-module.exports = ListTodo;
+module.exports = ShowList;

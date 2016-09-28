@@ -4,13 +4,15 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var TodoList = require('./components/TodoList.js');
 
-
+/************todoList*************/
+/*
+var TodoList = require('./components/todoList/ListTodo.js');
 ReactDOM.render(
     <TodoList />,
     document.getElementById('app')
 );
+*/
 
 
 

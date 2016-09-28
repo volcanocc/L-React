@@ -119,7 +119,6 @@ function html() {
 
 function styles() {
     return gulp.src(src.styles)
-        .pipe(cached('styles'))
         .pipe(sass())
         .on('error', handleError)
         .pipe(autoprefixer({
@@ -227,6 +226,7 @@ function watch() {
     gulp.watch(src.html, html);
     gulp.watch("src/**/*.js", webpackDevelopment);
     gulp.watch("src/**/*.scss", styles);
+    gulp.watch("assets/**/*", copyAssets);
     gulp.watch("tmp/**/*").on('change', function (file) {
         gulp.src('tmp/')
             .pipe(connect.reload());
