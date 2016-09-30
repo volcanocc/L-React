@@ -26,7 +26,6 @@ var InputCom = React.createClass({
                     <button type="button" className="v-button primary small" onClick={this.handleClick}>按钮</button>
                 </div>
             </div>
-
         )
     }
 });
